@@ -14,7 +14,7 @@ restService.use(
 restService.use(bodyParser.json());
 
 restService.post("/", function(req, res) {
-  var speech = req.body.result.parameters.bookselect;
+  var speech = "heelo hiee vro done" + req.body.result.parameters.bookselect;
   return res.json({
     speech: speech,
     displayText: speech,
